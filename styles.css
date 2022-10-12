@@ -41,6 +41,8 @@ h1{
     font-family: fraunces;
     font-size: 2.188rem;
     font-weight: 700;
+    line-height:2.188rem;
+    min-width: 302px;
     margin-top: 5%;
     margin-bottom: 5%;
     color: hsl(212, 21%, 14%);
@@ -60,6 +62,7 @@ p{
     font-weight:500;
     font-size: 0.875rem;
     line-height:1.375rem;
+    max-width: 294px;
 }
 .product-price-section{
     display: flex;
@@ -81,19 +84,38 @@ p{
     
 }
 button {
-    display: inline-block;
+    display: inline-flex;
     background-color:rgb(61, 129, 104);
     color: white;
     border: 0;
     border-radius: 8px;
     width: 100%;
     height: 50px;
+    justify-content: center;
+    align-items: center;
   }
   button:hover {
     background-color:rgb(61, 129, 104);
   }
 .product-category{
     font-stretch: extra-expanded;
+}
+#shopping-ATC-button{
+    
+}
+button img{
+    
+    height:17px;
+    width: auto;
+    /* margin-top: 10px; */
+    border-radius: 0;
+    margin-right: 10px;
+}
+
+button span{
+    font-weight: 600;
+
+
 }
 /* ------------------- */
 
@@ -142,13 +164,19 @@ button {
     .card-product-data {
         display: flex;
         flex-direction: column;
-        gap:5%;
-        margin:5%;
+        gap:.8rem;
+        margin:6%;
         padding:0;
         align-self: center;
 
     }
-    
+    h1{
+        min-width: 225px;
+    }
+    p{
+        max-width: 225px;
+      
+    }    
         
     
 }
