@@ -17,20 +17,18 @@ body{
 }
 .card-container{   
     background-color :hsl(0, 0%, 100%);
-    width:375px;
+    min-width:375px;
+    margin-left: 25%;
+    margin-right: 25%;
     align-self: center;
     display: flex;
     flex-direction: column;
     border-radius:12px ;
-
-}
-.card-product-preview-m{
-    width: 100%;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
-
     
+
 }
+
+
 .card-product-data{
     margin:9%;
 }
@@ -99,3 +97,20 @@ button {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width:900px){
+   
+    .card-container{
+        flex-direction: row;
+        width: 50%;
+    }
+    .card-product-preview{
+        border-radius: 0;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        width: 50%;
+        
+        
+ 
+
+}
